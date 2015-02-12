@@ -22,9 +22,7 @@
 		589A854A19FB460E0005DE52 /* Tab2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589A854919FB460E0005DE52 /* Tab2.storyboard */; };
 		589A854C19FB46160005DE52 /* Tab3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589A854B19FB46160005DE52 /* Tab3.storyboard */; };
 		589A854E19FB46220005DE52 /* Tab4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589A854D19FB46220005DE52 /* Tab4.storyboard */; };
-		589A855B19FB4F9D0005DE52 /* BaseFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A855A19FB4F9D0005DE52 /* BaseFacade.m */; };
-		589A855E19FB4FB50005DE52 /* AllFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A855D19FB4FB50005DE52 /* AllFacade.m */; };
-		589A856119FB4FDF0005DE52 /* SceneFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A856019FB4FDF0005DE52 /* SceneFacade.m */; };
+		58DFBAE11A8C9C0800737DAD /* UIStoryboard+AIExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DFBAE01A8C9C0800737DAD /* UIStoryboard+AIExtension.m */; };
 		58F70C7919FB8B7D005FB1FE /* Tab1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58F70C7819FB8B7D005FB1FE /* Tab1.storyboard */; };
 		58F70C7F19FB8DE1005FB1FE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F70C7E19FB8DE1005FB1FE /* RootViewController.m */; };
 /* End PBXBuildFile section */
@@ -59,12 +57,8 @@
 		589A854919FB460E0005DE52 /* Tab2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tab2.storyboard; sourceTree = "<group>"; };
 		589A854B19FB46160005DE52 /* Tab3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tab3.storyboard; sourceTree = "<group>"; };
 		589A854D19FB46220005DE52 /* Tab4.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tab4.storyboard; sourceTree = "<group>"; };
-		589A855919FB4F9D0005DE52 /* BaseFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseFacade.h; sourceTree = "<group>"; };
-		589A855A19FB4F9D0005DE52 /* BaseFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseFacade.m; sourceTree = "<group>"; };
-		589A855C19FB4FB50005DE52 /* AllFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllFacade.h; sourceTree = "<group>"; };
-		589A855D19FB4FB50005DE52 /* AllFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllFacade.m; sourceTree = "<group>"; };
-		589A855F19FB4FDF0005DE52 /* SceneFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneFacade.h; sourceTree = "<group>"; };
-		589A856019FB4FDF0005DE52 /* SceneFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneFacade.m; sourceTree = "<group>"; };
+		58DFBADF1A8C9C0800737DAD /* UIStoryboard+AIExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+AIExtension.h"; sourceTree = "<group>"; };
+		58DFBAE01A8C9C0800737DAD /* UIStoryboard+AIExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+AIExtension.m"; sourceTree = "<group>"; };
 		58F70C7819FB8B7D005FB1FE /* Tab1.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tab1.storyboard; sourceTree = "<group>"; };
 		58F70C7D19FB8DE1005FB1FE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		58F70C7E19FB8DE1005FB1FE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
@@ -127,11 +121,12 @@
 		589A851B19FB45810005DE52 /* MultipleStoryboard */ = {
 			isa = PBXGroup;
 			children = (
-				589A855819FB4F820005DE52 /* Facade */,
 				589A852419FB45810005DE52 /* AppDelegate.h */,
 				589A852519FB45810005DE52 /* AppDelegate.m */,
 				58F70C7D19FB8DE1005FB1FE /* RootViewController.h */,
 				58F70C7E19FB8DE1005FB1FE /* RootViewController.m */,
+				58DFBADF1A8C9C0800737DAD /* UIStoryboard+AIExtension.h */,
+				58DFBAE01A8C9C0800737DAD /* UIStoryboard+AIExtension.m */,
 				58F70C7819FB8B7D005FB1FE /* Tab1.storyboard */,
 				589A854919FB460E0005DE52 /* Tab2.storyboard */,
 				589A854B19FB46160005DE52 /* Tab3.storyboard */,
@@ -169,19 +164,6 @@
 				589A853719FB45810005DE52 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		589A855819FB4F820005DE52 /* Facade */ = {
-			isa = PBXGroup;
-			children = (
-				589A855919FB4F9D0005DE52 /* BaseFacade.h */,
-				589A855A19FB4F9D0005DE52 /* BaseFacade.m */,
-				589A855C19FB4FB50005DE52 /* AllFacade.h */,
-				589A855D19FB4FB50005DE52 /* AllFacade.m */,
-				589A855F19FB4FDF0005DE52 /* SceneFacade.h */,
-				589A856019FB4FDF0005DE52 /* SceneFacade.m */,
-			);
-			path = Facade;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +210,7 @@
 		589A850A19FB45810005DE52 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = NC;
 				TargetAttributes = {
 					589A852C19FB45810005DE52 = {
@@ -283,12 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589A856119FB4FDF0005DE52 /* SceneFacade.m in Sources */,
+				58DFBAE11A8C9C0800737DAD /* UIStoryboard+AIExtension.m in Sources */,
 				589A852619FB45810005DE52 /* AppDelegate.m in Sources */,
 				58F70C7F19FB8DE1005FB1FE /* RootViewController.m in Sources */,
-				589A855E19FB4FB50005DE52 /* AllFacade.m in Sources */,
 				589A852219FB45810005DE52 /* main.m in Sources */,
-				589A855B19FB4F9D0005DE52 /* BaseFacade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +314,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -373,7 +352,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -431,7 +409,6 @@
 		589A854219FB45810005DE52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultipleStoryboard.app/MultipleStoryboard";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -454,7 +431,6 @@
 		589A854319FB45810005DE52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultipleStoryboard.app/MultipleStoryboard";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

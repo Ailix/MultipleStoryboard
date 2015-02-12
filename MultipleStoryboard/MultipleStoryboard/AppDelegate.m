@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "UIStoryboard+AIExtension.h"
+
 
 @implementation AppDelegate
 
@@ -15,6 +17,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     RootViewController *rootVc = [[RootViewController alloc] init];
+    UIViewController *vc1 = [UIStoryboard viewControllerByIdentifier:@"navi1" withStoryboard:@"Tab1"];
+    UIViewController *vc2 = [UIStoryboard viewControllerByIdentifier:@"navi2" withStoryboard:@"Tab2"];
+    UIViewController *vc3 = [UIStoryboard viewControllerByIdentifier:@"navi3" withStoryboard:@"Tab3"];
+    UIViewController *vc4 = [UIStoryboard viewControllerByIdentifier:@"navi4" withStoryboard:@"Tab4"];
+
+    rootVc.viewControllers = @[vc1,vc2,vc3,vc4];
+    
     self.window.rootViewController = rootVc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

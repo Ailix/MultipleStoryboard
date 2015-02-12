@@ -7,7 +7,6 @@
 //
 
 #import "RootViewController.h"
-#import "AllFacade.h"
 
 @interface RootViewController ()
 
@@ -27,14 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    UIViewController *vc = [[AllFacade sharedFacade].sceneFacade getSceneByKey:@"navi1" storyboardName:@"Tab1"];
-    UIViewController *vc2 = [[AllFacade sharedFacade].sceneFacade getSceneByKey:@"navi2" storyboardName:@"Tab2"];
-    UIViewController *vc3 = [[AllFacade sharedFacade].sceneFacade getSceneByKey:@"navi3" storyboardName:@"Tab3"];
-    UIViewController *vc4 = [[AllFacade sharedFacade].sceneFacade getSceneByKey:@"navi4" storyboardName:@"Tab4"];
-
-    self.viewControllers = @[vc,vc2,vc3,vc4];
-    
 	// Do any additional setup after loading the view.
 }
 
